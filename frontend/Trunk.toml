@@ -1,0 +1,8 @@
+[build]
+release = true
+dist = "../backend/static"
+index = "index.html"
+
+[[copy]]
+source = "static"
+dest   = "."
