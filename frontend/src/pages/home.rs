@@ -39,7 +39,7 @@ pub fn home() -> Html {
 
             <ConfettiButton />
 
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                 { for buttons.iter().map(|(route, label)| html! {
                     <div class="flex justify-center">
                         <Link<Route> to={route.clone()}>
