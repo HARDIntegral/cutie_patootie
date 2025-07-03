@@ -31,7 +31,7 @@ pub fn home() -> Html {
     html! {
         <div class="min-h-screen flex flex-col items-center justify-center px-16 py-8">
             <h1 class="text-4xl font-bold text-pink-700 mb-10 text-center font-sans">
-                {"Hi Sonu 💖, how ya feelin?"}
+                {"Hi Sonu 💖, How Ya Feelin?"}
             </h1>
             <h2 class="text-1xl font-bold text-pink-700 mb-8 text-center font-sans">
                 {"Click on a button based on how you're feeling right now or what you need right now 🩷 or even some confetti 🎉"}
