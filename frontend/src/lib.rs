@@ -1,9 +1,10 @@
-use wasm_bindgen::prelude::*; // gives #[wasm_bindgen(start)]
+use wasm_bindgen::prelude::*;
 use yew::prelude::*;
 use yew_router::prelude::*;
 
+pub mod components;
 mod pages;
-mod routes; // src/routes.rs // src/pages/mod.rs re-exports every page
+mod routes;
 
 use routes::{switch, Route};
 
@@ -16,7 +17,7 @@ fn app() -> Html {
     }
 }
 
-#[wasm_bindgen(start)] // single entry-point for the WASM lib
+#[wasm_bindgen(start)]
 pub fn run_app() {
     yew::Renderer::<App>::new().render();
 }

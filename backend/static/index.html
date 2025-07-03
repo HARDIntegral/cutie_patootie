@@ -9,17 +9,18 @@
 	<!-- Tailwind – no build step needed -->
 	<script src="https://cdn.tailwindcss.com"></script>
 
+	<!-- Confetti -->
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+
 	<!-- Trunk can copy static assets if you need them -->
 	
 
-	<!-- Diagonal-grid heart background (upright hearts, wide spacing) -->
 	<style>
-		/* Light-pink base */
 		body {
 			background-color: #ffcadd;
 		}
 
-		/* Two staggered layers create the diagonal */
 		body::before {
 			content: "";
 			position: fixed;
@@ -28,27 +29,23 @@
 			width: 100%;
 			height: 100%;
 			z-index: -10;
-			/* behind everything */
 			opacity: 0.15;
-			/* subtle fade */
 			background-size: 120px 60px;
-			/* wide horizontal spacing */
 			background-image:
 				url("data:image/svg+xml,%3Csvg viewBox='0 0 32 29.6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23ff69b4' d='M23.6 0c-3.4 0-6.4 2.1-7.6 5.1C14.8 2.1 11.8 0 8.4 0 3.8 0 0 3.8 0 8.4c0 9.3 16 21.2 16 21.2S32 17.7 32 8.4C32 3.8 28.2 0 23.6 0z'/%3E%3C/svg%3E"),
 				url("data:image/svg+xml,%3Csvg viewBox='0 0 32 29.6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23ff69b4' d='M23.6 0c-3.4 0-6.4 2.1-7.6 5.1C14.8 2.1 11.8 0 8.4 0 3.8 0 0 3.8 0 8.4c0 9.3 16 21.2 16 21.2S32 17.7 32 8.4C32 3.8 28.2 0 23.6 0z'/%3E%3C/svg%3E");
 			background-repeat: repeat;
-			/* 1st layer starts at (0,0); 2nd is shifted half-grid to create diagonal */
 			background-position: 0 0, 60px 30px;
 		}
 	</style>
-<link rel="modulepreload" href="/frontend-840254dc959bad7f.js" crossorigin="anonymous" integrity="sha384-FZMER1T7GTsEGhqxkukAiVlhsOBqsDhm3WpmGXATsmcpFBbmkyBEWwSfGVBHZcp/"><link rel="preload" href="/frontend-840254dc959bad7f_bg.wasm" crossorigin="anonymous" integrity="sha384-NWGmSQKsFGSfkZeN4sB3flpUOA3bUVBngtsAGDopkVU792QPjkQav93yF4TX54Pw" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/frontend-224f8d51c7bdeacc.js" crossorigin="anonymous" integrity="sha384-VjlRtGs54V5aUuSI9TpJodGFgG4bwpIa3jN1WiM/SzN7l3eZg3Pry0bY56M+cJyl"><link rel="modulepreload" href="/snippets/frontend-aebe9231459ec4d1/src/js/confetti_wrapper.js" crossorigin="anonymous" integrity="sha384-D58fjPHGeVLb11+Jo1DrFFRyKrXYnlZF40InSuHwqpy9Bs1GLYtaNdgxJ5/8gN+X"><link rel="preload" href="/frontend-224f8d51c7bdeacc_bg.wasm" crossorigin="anonymous" integrity="sha384-GBHtW2bf3VOf3L3ARyl6fZ+eRS52h7iSaHFwThihI4krF8Ogt8UgVyCBZ1xK5jz4" as="fetch" type="application/wasm"></head>
 
 <body class="font-sans antialiased">
 	<div id="root"></div>
 
 <script type="module">
-import init, * as bindings from '/frontend-840254dc959bad7f.js';
-const wasm = await init({ module_or_path: '/frontend-840254dc959bad7f_bg.wasm' });
+import init, * as bindings from '/frontend-224f8d51c7bdeacc.js';
+const wasm = await init({ module_or_path: '/frontend-224f8d51c7bdeacc_bg.wasm' });
 
 
 window.wasmBindings = bindings;

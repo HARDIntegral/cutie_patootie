@@ -2,8 +2,8 @@ use yew::prelude::*;
 use yew_router::prelude::*;
 
 use crate::pages::{
-    Anxious, BadDay, Bored, Butterflies, Confused, Cuddle, Distraction, GoodDay, Headache, Home,
-    Hug, Insecure, Lonely, Love, Missing, Overwhelmed, Rainy, Sad, SelfDoubt, Sleepy, Story, Text,
+    Anxious, BadDay, Bored, Confused, Cuddle, Distraction, GoodDay, Headache, Home, Hug, Insecure,
+    Lonely, Love, Missing, Overwhelmed, Rainy, Sad, SelfDoubt, Sleepy, Story, Text,
 };
 
 #[derive(Routable, PartialEq, Eq, Clone, Debug)]
@@ -46,8 +46,6 @@ pub enum Route {
     Insecure,
     #[at("/confused")]
     Confused,
-    #[at("/butterflies")]
-    Butterflies,
     #[at("/rainy")]
     Rainy,
     #[at("/love")]
@@ -75,7 +73,6 @@ pub fn switch(route: Route) -> Html {
         Route::Bored => html! { <Bored /> },
         Route::Insecure => html! { <Insecure /> },
         Route::Confused => html! { <Confused /> },
-        Route::Butterflies => html! { <Butterflies /> },
         Route::Rainy => html! { <Rainy /> },
         Route::Love => html! { <Love /> },
     }

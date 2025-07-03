@@ -1,7 +1,6 @@
 pub mod anxious;
 pub mod bad_day;
 pub mod bored;
-pub mod butterflies;
 pub mod confused;
 pub mod cuddle;
 pub mod distraction;
@@ -24,7 +23,6 @@ pub mod text;
 pub use anxious::Anxious;
 pub use bad_day::BadDay;
 pub use bored::Bored;
-pub use butterflies::Butterflies;
 pub use confused::Confused;
 pub use cuddle::Cuddle;
 pub use distraction::Distraction;
