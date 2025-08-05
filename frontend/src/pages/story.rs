@@ -22,7 +22,7 @@ pub fn story() -> Html {
             </h2>
 
             <h2 class="text-1xl font-bold text-pink-700 mb-8 text-center font-sans">
-                {"What? That wasn't enough? It's ok, we're still righting that story ;)"}
+                {"What? That wasn't enough? It's ok, we're still writing that story ;)"}
             </h2>
 
             <ConfettiButton />
